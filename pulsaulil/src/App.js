@@ -7,9 +7,9 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name : "Red",
-      color : "Merah",
-      img : "redberry.jpg"
+      name : "Home",
+      color : "grey",
+      img : "home.jpg"
     };
   };
 
