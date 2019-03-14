@@ -7,22 +7,22 @@ import App from './App';
 const items = [
     {
         name : "Red",
-        color : "merah",
+        color : "Merah",
         img : "redberry.jpg"
     },
     {
         name : "Yellow",
-        color : "kuning",
+        color : "Kuning",
         img : "yellrose.jpg"
     },
     {
         name : "Green",
-        color : "hijau",
+        color : "Hijau",
         img : "green.jpg"
     },
     {
         name : "Blue",
-        color : "biru",
+        color : "Biru",
         img : "blueberry.jpg"
     }
 
