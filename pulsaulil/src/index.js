@@ -4,7 +4,29 @@ import './Custom.css';
 import App from './App';
 
 
-const items = ['Merah', 'Kuning', 'Hijau', 'Biru'];
+const items = [
+    {
+        name : "Red",
+        color : "merah",
+        img : "redberry.jpg"
+    },
+    {
+        name : "Yellow",
+        color : "kuning",
+        img : "yellrose.jpg"
+    },
+    {
+        name : "Green",
+        color : "hijau",
+        img : "green.jpg"
+    },
+    {
+        name : "Blue",
+        color : "biru",
+        img : "blueberry.jpg"
+    }
+
+];
 
 
 ReactDOM.render(<App items={items}/>, document.getElementById('root'));

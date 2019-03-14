@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './App.css';
 
 class App extends Component {
@@ -6,13 +7,17 @@ class App extends Component {
     super(props);
 
     this.state = {
-      active: 'Home',
+      name : "Red",
+      color : "Merah",
+      img : "redberry.jpg"
     };
   };
 
   clicked(menu){
     this.setState({
-      active: menu,
+      name : menu.name,
+      color : menu.color,
+      img : menu.img
     });
   }
   render() {
@@ -23,23 +28,23 @@ class App extends Component {
           <nav className="nav">{this.props.items.map((menu,index) => {
             var style='menu';
 
-            if (this.state.active === menu){
+            if (this.state.color === menu.color){
               style = `${style} is-active`;
             }
 
             return <a
-                  className={style+" "+menu}
-                
+                  className={style+" "+menu.color}
                   onClick={this.clicked.bind(this, menu)}
-                  key={index}
-                >
-                  {menu}
+                  key={index}>
+                  {menu.name}
                 </a>;
           })}
           </nav>
 
           <div className="info">
-  ini adalah <span className={"selected "+this.state.active}>{this.state.active}</span>
+  ini adalah <span className={"selected "+this.state.color}>{this.state.color}</span>
+          <br></br>
+          <img src={this.state.img} width="240"></img>
           </div>
       </div>
     
