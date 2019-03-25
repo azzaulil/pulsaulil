@@ -44,6 +44,7 @@ class App extends Component {
           <div className="info">
   ini adalah <span className={"selected "+this.state.color}>{this.state.color}</span>
           <br></br>
+          <br></br>
           <img src={this.state.img} width="240"></img>
           </div>
       </div>
