@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/pulsaulil/static/css/main.e1a0ee69.chunk.css"
   },
   {
-    "revision": "58210fe1a77c26452b6102ef1f4f3e66",
+    "revision": "62d0e69b66aacfdf4c92ad810517af1d",
     "url": "/pulsaulil/index.html"
   }
 ];
