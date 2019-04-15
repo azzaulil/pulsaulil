@@ -20,6 +20,22 @@ class App extends Component {
       img : menu.img
     });
   }
+
+  info(name){
+    if(name == 'Calculator'){
+
+    }else {
+
+      return
+      <div>
+      ini adalah <span className={"selected "+this.state.color}>{this.state.color}</span>
+          <br></br>
+          <br></br>
+          <img src={this.state.img} width="240"></img>
+      </div>
+    }
+  }
+
   render() {
     return (
 	
@@ -42,10 +58,8 @@ class App extends Component {
           </nav>
 
           <div className="info">
-  ini adalah <span className={"selected "+this.state.color}>{this.state.color}</span>
-          <br></br>
-          <br></br>
-          <img src={this.state.img} width="240"></img>
+          {this.calc(this.state.name)}
+              
           </div>
       </div>
     
