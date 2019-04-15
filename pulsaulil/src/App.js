@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   info(name){
-    if(name == 'calc'){
+    if(name == 'Calculator'){
 
     }else {
 
@@ -59,7 +59,7 @@ class App extends Component {
           </nav>
 
           <div className="info">
-            {this.calc(this.state.name)}
+            {this.info(this.state.name)}
               
           </div>
       </div>

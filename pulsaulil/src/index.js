@@ -24,6 +24,11 @@ const items = [
         name : "Blue",
         color : "Biru",
         img : "blueberry.jpg"
+    },
+    {
+        name : "Calculator",
+        color : "Grey",
+        img : ""
     }
 
 ];
