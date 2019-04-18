@@ -10,9 +10,9 @@ class App extends Component {
       name : "Home",
       color : "grey",
       img : "home.jpg",
-      /*nilai1 : null,
+      nilai1 : null,
       nilai2 : null,
-      operator : null,
+      /*operator : null,
       hasil : null*/
     };
   };
@@ -73,14 +73,16 @@ class App extends Component {
     if(name == 'Calculator'){
       return (
         <div>
-          ini adalah <span className={"selected "+this.state.color}>{this.state.color}</span>
+          ini adalah <span className={"selected "+this.state.color}>{this.state.name}</span>
             <br></br>
             <br></br>
 
-            <input type = "number" placeholder="angka 1"/>+
-            <input type = "number" placeholder="angka 2"/>=
-            <span>...</span><br/><br/>
-            <button>hitung</button>
+            <input type = "number" name="nilai1" placeholder="angka 1" 
+              value={this.state.nilai1} onChange={this.onchangeHandler.bind(this)}/>+
+            <input type = "number" name="nilai2" placeholder="angka 2"
+              value={this.state.nilai2} onChange={this.onchangeHandler.bind(this)}/>=
+
+            <span>{parseInt(this.state.nilai1) +  parseInt(this.state.nilai2)}</span>
         </div>
       );
       
@@ -88,13 +90,19 @@ class App extends Component {
 
       return (
         <div>
-          ini adalah <span className={"selected "+this.state.color}>{this.state.color}</span>
+          ini adalah <span className={"selected "+this.state.color}>{this.state.name}</span>
             <br></br>
             <br></br>
             <img src={this.state.img} width="200"></img>
         </div>
       )
     }
+  }
+
+  changeHandler(event){
+    this.setState({
+      nilai1 : event.targer.value
+    });
   }
 
   render() {
