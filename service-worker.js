@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pulsaulil/precache-manifest.4fd675f935abd826e8e8d0201bc1c85b.js"
+  "/pulsaulil/precache-manifest.7f7b9039ad01b7f69efb9299ae3831e2.js"
 );
 
 workbox.clientsClaim();
