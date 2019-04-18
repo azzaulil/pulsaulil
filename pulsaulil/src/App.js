@@ -73,7 +73,7 @@ class App extends Component {
     if(name == 'Calculator'){
       return (
         <div>
-          ini adalah <span className={"selected "+this.state.color}>{this.state.name}</span>
+          <span className={"selected "+this.state.color}>{this.state.name}</span>
             <br></br>
             <br></br>
 
@@ -101,7 +101,7 @@ class App extends Component {
 
   changeHandler(event){
     this.setState({
-      nilai1 : event.targer.value
+      nilai1 : event.target.value
     });
   }
 
