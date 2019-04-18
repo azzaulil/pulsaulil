@@ -56,6 +56,9 @@
   .Biru.is-active {
     background: aqua;
   }
+  .Calculator.is-active {
+    background: grey;
+  }
   
   .Merah.selected {
     background: red;
@@ -68,6 +71,9 @@
   }
   .Biru.selected {
     background: aqua;
+  }
+  .Calculator.selected {
+    background: grey;
   }
  
   .info {
