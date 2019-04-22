@@ -1,13 +1,14 @@
 {
   "main.css": "/pulsaulil/static/css/main.35f915da.chunk.css",
-  "main.js": "/pulsaulil/static/js/main.4d24ed71.chunk.js",
-  "main.js.map": "/pulsaulil/static/js/main.4d24ed71.chunk.js.map",
+  "main.js": "/pulsaulil/static/js/main.15cfbf8c.chunk.js",
+  "main.js.map": "/pulsaulil/static/js/main.15cfbf8c.chunk.js.map",
   "runtime~main.js": "/pulsaulil/static/js/runtime~main.2a77bfbe.js",
   "runtime~main.js.map": "/pulsaulil/static/js/runtime~main.2a77bfbe.js.map",
-  "static/js/2.65aa1cca.chunk.js": "/pulsaulil/static/js/2.65aa1cca.chunk.js",
-  "static/js/2.65aa1cca.chunk.js.map": "/pulsaulil/static/js/2.65aa1cca.chunk.js.map",
+  "static/js/2.d6a534e5.chunk.js": "/pulsaulil/static/js/2.d6a534e5.chunk.js",
+  "static/js/2.d6a534e5.chunk.js.map": "/pulsaulil/static/js/2.d6a534e5.chunk.js.map",
   "index.html": "/pulsaulil/index.html",
-  "precache-manifest.d279fd9279d24274f40409328b47fdc4.js": "/pulsaulil/precache-manifest.d279fd9279d24274f40409328b47fdc4.js",
+  "precache-manifest.f9618cc633f1ac230c7f1d45c8d69a91.js": "/pulsaulil/precache-manifest.f9618cc633f1ac230c7f1d45c8d69a91.js",
   "service-worker.js": "/pulsaulil/service-worker.js",
-  "static/css/main.35f915da.chunk.css.map": "/pulsaulil/static/css/main.35f915da.chunk.css.map"
+  "static/css/main.35f915da.chunk.css.map": "/pulsaulil/static/css/main.35f915da.chunk.css.map",
+  "static/media/logo.svg": "/pulsaulil/static/media/logo.ee7cd8ed.svg"
 }
