@@ -58,7 +58,7 @@ class App extends Component {
             <br></br>
             <img src={this.state.img} width="200"></img>
         </div>
-      )
+      );
     }
   }
 
@@ -105,7 +105,7 @@ class App extends Component {
       );
     }
   }
-  
+
   render() {
     
     return (
@@ -119,12 +119,12 @@ class App extends Component {
               style = `${style} is-active`;
             }
 
-            return <a
+            return <div
                   className={style+" "+menu.color}
                   onClick={this.clicked.bind(this, menu)}
                   key={index}>
                   {menu.name}
-                </a>;
+                </div>;
           })}
           </nav>
 
