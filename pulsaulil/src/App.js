@@ -10,55 +10,11 @@ class App extends Component {
     this.state = {
       name : "Home",
       color : "grey",
+      img : "home.jpg",
       nilai1 : null,
       nilai2 : null,
       operator : null,
       hasil : null,
-    };
-  }
-
-  clicked(menu){
-    this.setState({
-      name : menu.name,
-      color : menu.color,
-      img : menu.img
-    });
-  }
-
-  info(name){
-    if(name == 'Calculator'){
-      return(
-        <div>
-          <form onSubmit={this.handleSubmit.bind.this}>
-            <label>Nilai :</label>
-            <input type="number" ref="nilai1" className="form-control"/>
-            <select ref="operator" className="form-control">
-              <option value="+">+</option>
-              <option value="-">-</option>
-              <option value="*">*</option>
-              <option value="/">/</option>
-            </select>
-            <input type="number" ref="nilai2" className="form-control"/>
-            <br/>
-            <button className="btn btn-primary">Lihat hasil</button>
-          </form>
-          {}
-          {this.renderHasil()}
-          {}
-        </div>
-      );
-      
-    } else if (name == 'Profile'){
-      return <Pr/>
-    } else{
-      return (
-        <div>
-          ini adalah <span className={"selected "+this.state.color}>{this.state.name}</span>
-            <br></br>
-            <br></br>
-            <img src={this.state.img} width="200"></img>
-        </div>
-      );
     }
   }
 
@@ -135,6 +91,51 @@ class App extends Component {
       </div>
     
     );
+  }
+
+  clicked(menu){
+    this.setState({
+      name : menu.name,
+      color : menu.color,
+      img : menu.img
+    });
+  }
+
+  info(name){
+    if(name == 'Calculator'){
+      return(
+        <div>
+          <form onSubmit={this.handleSubmit.bind.this}>
+            <label>Nilai :</label>
+            <input type="number" ref="nilai1" className="form-control"/>
+            <select ref="operator" className="form-control">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select>
+            <input type="number" ref="nilai2" className="form-control"/>
+            <br/>
+            <button className="btn btn-primary">Lihat hasil</button>
+          </form>
+          
+          {this.renderHasil()}
+          
+        </div>
+      );
+      
+    } else if (name == 'Profile'){
+      return <Pr/>
+    } else{
+      return (
+        <div>
+          ini adalah <span className={"selected "+this.state.color}>{this.state.name}</span>
+            <br></br>
+            <br></br>
+            <img src={this.state.img} width="200"></img>
+        </div>
+      );
+    }
   }
 }
 
