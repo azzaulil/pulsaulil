@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/pulsaulil/static/js/runtime~main.2a77bfbe.js"
   },
   {
-    "revision": "350fe2240f65173b5b78",
-    "url": "/pulsaulil/static/js/main.15cfbf8c.chunk.js"
+    "revision": "c7a8e92f95b778725ddf",
+    "url": "/pulsaulil/static/js/main.73dca1cc.chunk.js"
   },
   {
     "revision": "9eee67cf782a38d35aeb",
     "url": "/pulsaulil/static/js/2.d6a534e5.chunk.js"
   },
   {
-    "revision": "350fe2240f65173b5b78",
-    "url": "/pulsaulil/static/css/main.35f915da.chunk.css"
+    "revision": "c7a8e92f95b778725ddf",
+    "url": "/pulsaulil/static/css/main.f511a0ba.chunk.css"
   },
   {
-    "revision": "74bd1776f8c391c29cf69ca7807f78b3",
+    "revision": "268dc5a0f3d5e63a15cf20846da986bc",
     "url": "/pulsaulil/index.html"
   }
 ];
