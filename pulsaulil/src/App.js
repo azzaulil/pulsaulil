@@ -9,15 +9,14 @@ class App extends Component {
     this.state = {
       name : "Home",
       color : "grey",
-      img : "home.jpg",
       nilai1 : null,
       nilai2 : null,
-      /*operator : null,
-      hasil : null*/
+      operator : null,
+      hasil : null,
     };
   };
 
-  /*handleSubmit(e) {
+  handleSubmit(e) {
     e.preventDefault() ;
 
     const nilai1 = parseInt(this.refs.nilai1.value);
@@ -57,9 +56,11 @@ class App extends Component {
             {nilai1+operator+nilai2+'='+hasil}
           </p>
         </div>
-      )
+      );
     }
-  }*/
+  }
+
+ 
 
   clicked(menu){
     this.setState({
@@ -71,18 +72,22 @@ class App extends Component {
 
   info(name){
     if(name == 'Calculator'){
-      return (
+      return(
         <div>
-          <span className={"selected "+this.state.color}>{this.state.name}</span>
-            <br></br>
-            <br></br>
-
-            <input type = "number" name="nilai1" placeholder="angka 1" 
-              value={this.state.nilai1} onChange={this.onchangeHandler.bind(this)}/>+
-            <input type = "number" name="nilai2" placeholder="angka 2"
-              value={this.state.nilai2} onChange={this.onchangeHandler.bind(this)}/>=
-
-            <span>{parseInt(this.state.nilai1) +  parseInt(this.state.nilai2)}</span>
+          <form onSubmit={this.handleSubmit.bind.this}>
+            <label>Nilai :</label>
+            <input type="number" ref="nilai1" className="form-control"/>
+            <input type="number" ref="nilai2" className="form-control"/>
+            <label>Nilai :</label>
+            <select ref="operator" className="form-control">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select><br/>
+            <button className="btn btn-primary">Lihat hasil</button>
+          </form>
+          {this.renderHasil()}
         </div>
       );
       
@@ -99,13 +104,8 @@ class App extends Component {
     }
   }
 
-  changeHandler(event){
-    this.setState({
-      nilai1 : event.target.value
-    });
-  }
-
   render() {
+    
     return (
 	
       <div id="app">
