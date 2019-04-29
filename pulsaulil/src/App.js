@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 import Pr from './Profile.js';
 
 class App extends Component {
@@ -15,9 +16,10 @@ class App extends Component {
       nilai2 : null,
       operator : null,
       hasil : null,
-    }
-  }
+    };
 
+  }
+ 
   handleSubmit(e) {
     e.preventDefault() ;
 
